@@ -210,46 +210,51 @@
                         </div>
                         <section>
                           <!--tabs-->
-                          <div class="row">
+                          <div class="row mt-4">
                             <div class="col-md-12">
-                              <div>
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                  <li role="presentation" class="active">
-                                    <a href="#description" aria-controls="home" role="tab"
-                                      data-toggle="tab">Descripción</a>
-                                  </li>
-                                  <li role="presentation">
-                                    <a href="#comments" aria-controls="profile" role="tab"
-                                      data-toggle="tab">Comentarios</a>
-                                  </li>
-                                </ul>
 
-                                <!-- Tab panes -->
-                                <div class="tab-content nav nav-tabs" role="tablist">
-                                  <div role="tabpanel" class="tab-pane active" id="description">
-                                    <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-                                      placeat
-                                      facilis, eos repellendus quas accusamus dolor necessitatibus, odit quam,
-                                      suscipit
-                                      ipsam sit illo dolorum consequuntur.</article>
+                              <!-- Nav tabs -->
+
+                              <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link active" id="nav-description-tab" data-toggle="tab"
+                                    href="#nav-description" role="tab" aria-controls="nav-description"
+                                    aria-selected="true">Descripción</a>
+                                  <a class="nav-item nav-link" id="nav-comments-tab" data-toggle="tab"
+                                    href="#nav-comments" role="tab" aria-controls="nav-comments"
+                                    aria-selected="false">Comentarios</a>
+                                </div>
+                              </nav>
+                              <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-description" role="tabpanel"
+                                  aria-labelledby="nav-description-tab">
+                                  <p class="text-justify p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Recusandae
+                                    placeat
+                                    facilis, eos repellendus quas accusamus dolor necessitatibus, odit quam,
+                                    suscipit
+                                    ipsam sit illo dolorum consequuntur.</p>
+                                </div>
+                                <div class="tab-pane fade p-3" id="nav-comments" role="tabpanel"
+                                  aria-labelledby="nav-comments-tab">
+                                  <div class="card">
+                                    <div class="card-header">
+                                      Andres Martin comentó hace 7 días
+                                    </div>
+                                    <div class="card-body">
+                                      Me gustaría ver esta camiseta en otros colores.
+                                    </div>
                                   </div>
-                                  <div role="tabpanel" class="tab-pane" id="comments">
-                                    <div id="panel" class="panel panel-default">
-                                      <div class="panel-heading">
-                                        Andres Martin comentó hace 7 días
-                                      </div>
-                                      <div class="panel-body">
-                                        Me gustaría ver esta camiseta en otros colores.
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <textarea class="form-control" rows="4" id="comment"
-                                        placeholder="Ingresa tu comentario"></textarea>
-                                    </div>
+                                  <div class="form-group mt-3">
+                                    <textarea class="form-control" rows="3" id="comment"
+                                      placeholder="Ingresa tu comentario"></textarea>
                                   </div>
                                 </div>
+
                               </div>
+
+
+
                             </div>
                           </div>
                         </section>
